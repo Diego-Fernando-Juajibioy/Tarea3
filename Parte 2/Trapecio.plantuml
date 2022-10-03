@@ -1,0 +1,82 @@
+@startuml
+
+!theme plain
+top to bottom direction
+skinparam linetype ortho
+
+class Circulo {
+  + Circulo(): 
+  + Calculo(double): void
+}
+class Cuadrado {
+  + Cuadrado(): 
+  + Calculo(double): void
+}
+class Figuras {
+  + Figuras(): 
+  - pnlTriangulo: JPanel
+  - lbRectangulo: JLabel
+  - lbAlturaTriang: JLabel
+  - lbaltura: JLabel
+  - lbRombo: JLabel
+  - pnlMain: JPanel
+  - lbBaseMen: JLabel
+  - lbLadoa: JLabel
+  - lbTitulo: JLabel
+  - lbLado: JLabel
+  - textLadob: JTextField
+  - lbTriang: JLabel
+  - textLado: JTextField
+  - lbBaseRect: JLabel
+  - pnlRombo: JPanel
+  - textBaseTriang: JTextField
+  - lbRadio: JLabel
+  - btnBorrar: JButton
+  - textAltTriang: JTextField
+  - pnlCirculo: JPanel
+  - textAlturaRect: JTextField
+  - textDiagMen: JTextField
+  - pnlRectangulo: JPanel
+  - lbDiaglMay: JLabel
+  - lbBaseTriang: JLabel
+  - textBaseMen: JTextField
+  - lbTrap: JLabel
+  - pnlTrapecio: JPanel
+  - lbBaseMay: JLabel
+  - textDiagMay: JTextField
+  - textBaseRect: JTextField
+  - lbCuad: JLabel
+  - textRadioC: JTextField
+  - lbLadob: JLabel
+  - lbAlturaRect: JLabel
+  - lbCirculo: JLabel
+  - textLadoA: JTextField
+  - textBaseMay: JTextField
+  - lbLongitud: JLabel
+  - textAlturaTr: JTextField
+  - lbDiagMen: JLabel
+  - textAreaC: JTextField
+  - pnlCuadrado: JPanel
+  - textLongitud: JTextField
+  - pnlContenido: JPanel
+  - btnCalcular: JButton
+  + main(String[]): void
+}
+class Rectangulo {
+  + Rectangulo(): 
+  + Calculo(double, double): void
+}
+class Rombo {
+  + Rombo(): 
+  + Calculo(double, double, double): void
+}
+class Trapecio {
+  + Trapecio(): 
+  + Calculo(double, double, double, double, double): void
+}
+class Triangulo {
+  + Triangulo(): 
+  + Calculo(double, double): void
+}
+
+@enduml
